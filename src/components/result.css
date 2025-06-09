@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(145deg, #141414, #0f0f0f);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h3 {
+    text-align: center;
+    color: #00ffcc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 0 4px 12px rgba(0, 255, 204, 0.8);
+}
+
+.result-box {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(0, 255, 204, 0.2);
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ffcc;
+}
+
+table, th, td {
+    border: 1px solid #00ffcc;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #004d40;
+    color: #00ffcc;
+    font-weight: 700;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+tr:hover {
+    background-color: #00ffcc;
+    color: #1e1e1e;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 如果按鈕太多會自動換行 */
+    gap: 15px; /* 按鈕間距 */
+    margin: 20px 0;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap; /* 如果空間不足會自動換行 */
+  justify-content: center; /* 置中對齊 */
+  gap: 20px; /* 按鈕間距 */
+  margin-top: 20px;
+}
+
+.query-button {
+    width: 160px; /* 固定寬度 */
+    height: 60px; /* 統一高度，略調整讓兩行看起來不擠 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #00ffcc;
+    background-color: #1e1e1e;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    margin: 25px 20px;
+    white-space: normal;       /* 允許文字自動換行 */
+    line-height: 1.2;          /* 行高控制 */
+    padding: 8px 10px;         /* 內距確保字不貼邊 */
+}
+
+
+.query-button:hover {
+    background-color: #00ffcc;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px #00ffcc;
+    transform: translateY(-3px);
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button{
+    width: 80px; /* 固定寬度 */
+    height: 45px; /* 固定高度 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #00ffcc;
+    background-color: #1e1e1e;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.pagination button:hover {
+    background-color: #00ffcc;
+    color: #1e1e1e;
+    box-shadow: 0 0 15px #00ffcc;
+    transform: translateY(-3px);
+}
+.page-input input[type="number"] {
+    width: 60px; /* 固定寬度 */
+    height: 45px; /* 固定高度 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #00ffcc;
+    background-color: #1e1e1e;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+.page-input {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: 2px solid #00ffcc;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 0 25px #00ffcc;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 30px;
+  color: #00ffcc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: white;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.chart {
+  width: 48%;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
