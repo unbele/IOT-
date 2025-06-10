@@ -34,12 +34,12 @@
 - 異常紅色閃爍提示機制
 - Discord 警示同步推播
 - 可匯出完整日報數據（PDF/CSV）
-  
-  ![網頁主頁]("C:\Users\applo\OneDrive\桌面\iot\react-iot\images\1.png")
-  ![資料查詢表單]("C:\Users\applo\OneDrive\桌面\iot\react-iot\images\3.png")
-  ![查詢解果]("C:\Users\applo\OneDrive\桌面\iot\react-iot\images\4.png")
-  ![折現圖表]("C:\Users\applo\OneDrive\桌面\iot\react-iot\images\5.png")
- 
+
+ <img src="images/1.png" width="500"><br>
+<img src="images/3.png" width="500"><br>
+<img src="images/4.png" width="500"><br>
+<img src="images/5.png" width="500"><br>
+
 ## 📚 參考資料
 
 - 《Arduino 微電腦應用實習》
